@@ -1,0 +1,579 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/*---------Navigation-------*/
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-brand img {
+  height: 100px;
+  padding-left: 30px;
+}
+.navbar-nav li {
+  padding: 0 10px;
+}
+.navbar-nav li a {
+  float: right;
+  text-align: left;
+}
+#nav-bar ul li a:hover {
+  color: #007bff !important;
+}
+.navbar {
+  background: #fff;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.nav-link {
+  color: #555 !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* Header/Logo Title */
+.header {
+  padding: 250px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/Header.jpg);
+  color: rgb(204, 7, 7);
+  font-family: "Sofia";
+  font-size: 22px;
+}
+
+/*----------About-------*/
+#about {
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://images.unsplash.com/photo-1558518665-aa41dba55e2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#about h1 {
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+}
+#about h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.about {
+  margin-top: 40px;
+}
+
+/*------------------Services-----------*/
+#services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/birmingham-museums-trust-Y_XS34BFX00-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #efefef !important;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#services h1 {
+  text-align: center;
+  color: #efefef !important;
+  padding-bottom: 10px;
+}
+#services h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.services {
+  margin-top: 40px;
+}
+.icon {
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 20px;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+#services p {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #ccc;
+}
+.services .col-md-3:hover {
+  background: #007bff;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+/*------Our Team--------*/
+* {
+  font-family: Exo;
+}
+@font-face {
+  font-family: Exo;
+  src: url(./fonts/Exo2.0-Medium.otf);
+}
+#team h1 {
+  text-align: center;
+  color: #070707 !important;
+  padding-bottom: 10px;
+}
+#team h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+
+.main {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, black, cyan);
+}
+.profile-card {
+  position: relative;
+  font-family: sans-serif;
+  width: 220px;
+  height: 220px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: 0.6s;
+  margin: 0 25px;
+}
+.profile-card:hover {
+  border-radius: 10px;
+  height: 260px;
+}
+.profile-card .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  z-index: 99;
+}
+.profile-card:hover .img {
+  transform: translateY(-60px);
+}
+.img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 22px #3336;
+  transition: 0.6s;
+}
+.profile-card:hover img {
+  border-radius: 10px;
+}
+.caption {
+  text-align: center;
+  transform: translateY(-80px);
+  opacity: 0;
+  transition: 0.6s;
+}
+.profile-card:hover .caption {
+  opacity: 1;
+}
+.caption h3 {
+  font-size: 21px;
+  font-family: sans-serif;
+}
+.caption p {
+  font-size: 15px;
+  color: #0c52a1;
+  font-family: sans-serif;
+  margin: 2px 0 9px 0;
+}
+.caption .social-links a {
+  color: #333;
+  margin-right: 15px;
+  font-size: 21px;
+  transition: 0.6s;
+}
+.social-links a:hover {
+  color: #0c52a1;
+}
+
+/*------------Promo---------*/
+#promo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/vitaly-sacred-giho2M2QXQQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(231, 10, 10);
+  background-attachment: fixed;
+  text-align: center;
+  padding: 100px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+/*--------Our Products-------*/
+#product {
+  padding: 40px 0;
+  background: #efefef;
+}
+#product h1 {
+  text-align: center;
+  color: #030303 !important;
+  padding-bottom: 10px;
+}
+
+.single-price {
+  margin: 10px auto 10px auto;
+  display: inline;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.single-price:hover {
+  box-shadow: 0 2px 20px #333;
+}
+.price-head {
+  background-color: #2196f3;
+  display: inline;
+  float: left;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
+}
+.price-head h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.price-head p {
+  font-size: 25px;
+  color: #ccc;
+  font-weight: bold;
+  line-height: 30px;
+}
+#price span {
+  font-size: 15px;
+}
+.price-content {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 0 15px;
+}
+.price-content ul li {
+  border-bottom: 1px solid #efefef;
+  padding: 15px 10px;
+  list-style: none;
+}
+ul li:last-child {
+  border: none;
+}
+.fa-check-circle {
+  color: green;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.fa-times-circle {
+  color: red;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.fa-book {
+  color: red;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.fa-clock-o {
+  color: rgb(72, 255, 0);
+  margin-right: 10px;
+  font-size: 20px;
+}
+.price-button {
+  display: inline;
+  float: left;
+  padding: 15px 15px 30px;
+  text-align: center;
+  width: 100%;
+}
+.buy-btn {
+  background-color: #c70e07;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 10px;
+  transition: 0.5s;
+}
+.buy-btn:hover {
+  border-color: 1px solid #fff;
+  background-color: #3f51b5;
+}
+.on-btn {
+  background-color: #0feba9;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 30px;
+  transition: 0.5s;
+}
+.on-btn:hover {
+  border-color: 1px solid #fff;
+  background-color: #b41170;
+}
+a {
+  text-decoration: #ff0000;
+  color: #fff !important;
+}
+/*------------Aims and Objectives---------*/
+#aims {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/aaron-burden-6jYoil2GhVk-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-attachment: fixed;
+  padding: 100px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+#aims h1 {
+  text-align: center;
+  color: #fff !important;
+  padding-bottom: 10px;
+}
+/*--------Church Services-------*/
+#church {
+  padding: 40px 0;
+  background: #efefef;
+}
+#church h1 {
+  text-align: center;
+  color: #030303 !important;
+  padding-bottom: 10px;
+}
+.single-price {
+  margin: 10px auto;
+  display: inline;
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.single-price:hover {
+  box-shadow: 0 2px 20px #333;
+}
+.price-head {
+  background-color: #00daf7;
+  display: inline;
+  float: left;
+  padding: 10px 5px;
+  text-align: center;
+  width: 100%;
+}
+.price-head h4 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.price-head p {
+  font-size: 25px;
+  color: rgb(134, 131, 131);
+  font-weight: bold;
+  line-height: 30px;
+}
+#price span {
+  font-size: 15px;
+}
+.price-content {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 0 15px;
+}
+.price-content ul li {
+  border-bottom: 1px solid #efefef;
+  padding: 15px 10px;
+  list-style: none;
+}
+ul li:last-child {
+  border: none;
+}
+.fa-check-circle {
+  color: green;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.fa-times-circle {
+  color: red;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.price-button {
+  display: inline;
+  float: left;
+  padding: 15px 15px 30px;
+  text-align: center;
+  width: 100%;
+}
+.buy-btn {
+  background-color: #2196f3;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 50px;
+  transition: 0.5s;
+}
+.buy-btn:hover {
+  border-color: 1px solid #fff;
+  background-color: #3f51b5;
+}
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+#portfolio h1 {
+  text-align: center;
+  color: #070707 !important;
+  padding-bottom: 10px;
+}
+#portfolio h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 5px;
+}
+.wrap {
+  overflow: hidden;
+  margin: 10px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+  float: left;
+  position: relative;
+  width: 20%;
+  padding-bottom: 20%;
+}
+
+.boxInner {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+  overflow: hidden;
+}
+.boxInner img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  /* Smartphone view: 1 tile */
+  .box {
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+  /* Tablet view: 2 tiles */
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+@media only screen and (max-width: 1050px) and (min-width: 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+    width: 33.3%;
+    padding-bottom: 33.3%;
+  }
+}
+@media only screen and (max-width: 1290px) and (min-width: 1051px) {
+  /* Medium desktop: 4 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+
+/*------------Get in Touch---------*/
+#contact {
+  background: #efefef;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #777;
+}
+.contact-form {
+  padding: 15px;
+}
+.form-control {
+  border-radius: 0 !important;
+  border: none !important;
+}
+::placeholder {
+  color: #999 !important;
+}
+.follow {
+  background: rgb(252, 252, 252);
+  padding: 10px;
+  margin: 15px;
+}
+.contact-info .fa {
+  margin: 10px;
+  color: #6baef7;
+  font-weight: bold;
+}
+.gotopbtn {
+  position: fixed;
+  width: 45px;
+  height: 45px;
+  bottom: 55px;
+  right: 70px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  background-color: rgb(250, 3, 3);
+  font-size: 35px;
+}
+/*--------Footer------*/
+#footer {
+  background: #333;
+  color: #fff;
+  padding: 12px;
+}
+.fa-heart-o {
+  margin: 3px;
+  color: red;
+}
